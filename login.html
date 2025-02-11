@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-900 text-white">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-black">
+        <h2 class="text-lg font-bold mb-4">Login</h2>
+        <form hx-post="/api/login" hx-target="#login-message">
+            <input type="text" name="username" placeholder="Username" class="w-full p-2 border rounded mb-2">
+            <input type="password" name="password" placeholder="Password" class="w-full p-2 border rounded mb-4">
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Login</button>
+        </form>
+        <p id="login-message" class="text-red-500 mt-2"></p>
+    </div>
+</body>
+</html>

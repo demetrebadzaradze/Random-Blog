@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Your Website</title>
     <script src="https://unpkg.com/htmx.org@1.9.5"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold">🚧 Website Under Construction 🚧</h1>
-        <p class="mt-4 text-lg">We're working hard to bring something amazing. Stay tuned!</p>
+<body class="h-screen bg-cover bg-center bg-gradient-to-r from-blue-500 to-purple-600"> 
+    <div class="h-screen w-full flex flex-col backdrop-blur-md bg-black/50">
+        
+        <header class="w-full p-4 flex justify-between items-center text-white">
+            <h1 class="text-2xl font-bold">Your Website</h1>
+            <div>
+                <a href="login.html" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-500">Login</a>
+                <a href="signup.html" class="px-4 py-2 ml-2 bg-green-600 rounded-lg hover:bg-green-500">Sign Up</a>
+            </div>
+        </header>
+
+        <main class="flex-1 flex items-center justify-center text-white text-center">
+            <div>
+                <h2 class="text-4xl font-bold">Welcome to Your Website</h2>
+                <p class="mt-4">Earn rewards while browsing content and ads!</p>
+            </div>
+        </main>
+
+        <section class="bg-white text-black p-6">
+            <h2 class="text-2xl font-bold">About Us</h2>
+            <p class="mt-2">This website allows users to earn Bitcoin by viewing content and ads. Our mission is to create an engaging and rewarding experience for all users.</p>
+        </section>
     </div>
-    <div id="frame" style="width:100%; height:100%;"><iframe data-aa='2380862' src='//acceptable.a-ads.com/2380862' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe><a style="display: block; text-align: right; font-size: 12px;" id="preview-link" href="https://aads.com/campaigns/new/?source_id=2380862&source_type=ad_unit&partner=2380862">Advertise here</a></div>
-    <div id="frame" style="width:970px; height:auto;"><iframe data-aa='2380865' src='//ad.a-ads.com/2380865?size=970x250' style='width:970px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe><a style="display: block; text-align: right; font-size: 12px;" id="preview-link" href="https://aads.com/campaigns/new/?source_id=2380865&source_type=ad_unit&partner=2380865">Advertise here</a></div>
+
 </body>
 </html>
